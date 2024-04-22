@@ -26,9 +26,9 @@ const InvoiceList = () => {
   return (
     <Row>
       <Col className="mx-auto" xs={12} md={8} lg={9}>
-        <h3 className="fw-bold fs-1 pb-2 pb-md-4 text-center ">
-          Swipe Assignment
-        </h3>
+        <h1 className="fw-bold fs-1 pb-2 pb-md-4 text-center ">
+          Invoice Generator
+        </h1>
         <Card className="d-flex p-3 p-md-4 my-3 my-md-4 ">
           {isListEmpty ? (
             <div className="d-flex flex-column align-items-center">
@@ -132,6 +132,17 @@ const InvoiceList = () => {
           )}
         </Card>
       </Col>
+      <h6 className="text-center text-secondary">
+        Made with ❤️ by{" "}
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/shivam-bhushan"
+          className="text-secondary-emphasis  "
+        >
+          Shivam
+        </a>
+      </h6>
     </Row>
   );
 };
